@@ -63,7 +63,7 @@ class Card extends Component {
                 {
                     data.map(data => Input(data, this.handleInputChange))
                 }
-                <Content data/>>
+                <Content data={this.state}/>
             </div>
         )
     }
