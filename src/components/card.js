@@ -76,7 +76,9 @@ class Card extends Component {
             <form onSubmit={this.handleFormSubmit} className="card">
                 <div className="card__inputs">
                     {
-                        data.map(data => Input(data, this.handleInputChange))
+                        data.map((data, index) => {
+                           return Input(data, this.handleInputChange, index)
+                        })
                     }
                 </div>
                 <button type="submit">{this.state.contentVisible ? 'Clear Form' : 'Generate Madlib'}</button>
