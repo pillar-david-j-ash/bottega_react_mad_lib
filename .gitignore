@@ -3,3 +3,6 @@ npm_debug.log
 yarn-error.log
 
 dist.
+
+.idea
+env.js
